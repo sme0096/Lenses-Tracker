@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.deniska.lensestracker.Home">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="150dp">
+
+        <io.netopen.hotbitmapgg.library.view.RingProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_gravity="center"
+            app:max="100"
+            app:ringColor="@android:color/darker_gray"
+            app:ringProgressColor="@color/colorPrimaryDark"
+            app:ringWidth="10dp"
+            app:style="STROKE"
+            app:textColor="@color/colorPrimary"
+            app:textIsShow="false"
+            app:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvDays"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="60sp"
+            android:typeface="normal"
+            android:textColor="@color/textColorPrimary" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="31dp">
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/navigation" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnPlus"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="72dp"
+            android:layout_marginRight="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_add_black_24dp"
+            android:tint="@color/icons" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnNew"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="144dp"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="@color/icons"
+            android:clickable="true"
+            android:src="@drawable/ic_autorenew_black_24dp"
+            android:tint="@color/textColorSecondary"
+            app:borderWidth="0dp"
+            app:fabSize="normal" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Lenses Tracker</string>
+    <string name="title_home">Home</string>
+    <string name="title_profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+
+    <string name="prefGeneral">General</string>
+    <string name="ltype_title">Lenses Type</string>
+    <string name="ltype_biweekly">Biweekly</string>
+    <string name="ltype_monthly">Monthly</string>
+    <string name="ltype_quarterly">Quarterly</string>
+    <string name="pref_ltype_key" translatable="false">Type</string>
+    
+    <string name="continualKey" translatable="false">Continual</string>
+    <string name="continualTitle">Continual wear</string>
+    <string name="continualSumOn">Automatic countdown</string>
+    <string name="continualSumOff">User countdown</string>
+
+</resources>

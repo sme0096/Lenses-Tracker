@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_lensTypeLb">
+        <item>@string/ltype_biweekly</item>
+        <item>@string/ltype_monthly</item>
+        <item>@string/ltype_quarterly</item>
+    </string-array>
+    <string-array name="pref_lensTypeValue">
+        <item>14</item>
+        <item>30</item>
+        <item>90</item>
+    </string-array>
+
+</resources>
